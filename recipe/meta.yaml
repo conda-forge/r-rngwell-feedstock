@@ -1,4 +1,4 @@
-{% set version = "0.10-6" %}
+{% set version = '0.10-6' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: rngWELL_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/rngWELL_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rngWELL/rngWELL_{{ version }}.tar.gz
@@ -16,14 +15,13 @@ source:
 build:
   merge_build_host: True  # [win]
   number: 0
-  skip: true  # [win32]
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{ compiler('c') }}        # [not win]
+    - {{ compiler('c') }}              # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
     - {{posix}}filesystem        # [win]
     - {{posix}}sed               # [win]
@@ -49,19 +47,30 @@ test:
 about:
   home: https://CRAN.R-project.org/package=rngWELL
   license: BSD_3_clause
-  license_file: LICENSE
-  summary: 'It is a dedicated package to WELL pseudo random generators, which were introduced
+  summary: It is a dedicated package to WELL pseudo random generators, which were introduced
     in Panneton et al. (2006), ``Improved Long-Period Generators Based on Linear Recurrences
-    Modulo 2'''', ACM Transactions on Mathematical Software. But this package is not
-    intended to be used directly, you are strongly __encouraged__ to use the ''randtoolbox''
-    package, which depends on this package. '
+    Modulo 2'', ACM Transactions on Mathematical Software. But this package is not intended
+    to be used directly, you are strongly __encouraged__ to use the 'randtoolbox' package,
+    which depends on this package.
   license_family: BSD
+  license_file:
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/BSD_3_clause'
+    - LICENSE
 
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
+
+# Package: rngWELL
+# Type: Package
+# Title: Toolbox for WELL Random Number Generators
+# Version: 0.10-6
+# Author: C code by F. Panneton, P. L'Ecuyer and M. Matsumoto and R port by Christophe Dutang and Petr Savicky <savicky@cs.cas.cz>.
+# Maintainer: Christophe Dutang <christophe.dutang@ensimag.fr>
+# Description: It is a dedicated package to WELL pseudo random generators, which were introduced in Panneton et al. (2006), ``Improved Long-Period Generators Based on Linear Recurrences Modulo 2'', ACM Transactions on Mathematical Software. But this package is not intended to be used directly, you are strongly __encouraged__ to use the 'randtoolbox' package, which depends on this package.
+# Depends: R (>= 3.0.0)
+# License: BSD_3_clause + file LICENSE
+# NeedsCompilation: yes
+# Packaged: 2020-01-20 12:37:12 UTC; dutang
+# Repository: CRAN
+# Date/Publication: 2020-01-21 09:30:02 UTC
