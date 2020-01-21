@@ -7,7 +7,7 @@ Package license: BSD_3_clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: It is a dedicated package to WELL pseudo random generators, which were introduced in Panneton et al. (2006), ``Improved Long-Period Generators Based on Linear Recurrences Modulo 2'', ACM Transactions on Mathematical Software. But this package is not intended to be used directly, you are strongly __encouraged__ to use the 'randtoolbox' package, which depends on this package. 
+Summary: It is a dedicated package to WELL pseudo random generators, which were introduced in Panneton et al. (2006), ``Improved Long-Period Generators Based on Linear Recurrences Modulo 2'', ACM Transactions on Mathematical Software. But this package is not intended to be used directly, you are strongly __encouraged__ to use the 'randtoolbox' package, which depends on this package.
 
 
 
@@ -176,10 +176,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@bgruening](https://github.com/bgruening/)
-* [@cbrueffer](https://github.com/cbrueffer/)
 * [@conda-forge/r](https://github.com/conda-forge/r/)
-* [@daler](https://github.com/daler/)
-* [@jdblischak](https://github.com/jdblischak/)
-* [@johanneskoester](https://github.com/johanneskoester/)
 
