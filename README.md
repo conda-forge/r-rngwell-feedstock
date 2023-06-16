@@ -1,11 +1,22 @@
+About r-rngwell-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rngwell-feedstock/blob/main/LICENSE.txt)
+
 About r-rngwell
-===============
+---------------
 
 Home: https://CRAN.R-project.org/package=rngWELL
 
 Package license: BSD_3_clause
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rngwell-feedstock/blob/main/LICENSE.txt)
+Summary: It is a dedicated package to WELL pseudo random generators, which were introduced in Panneton et al. (2006), ``Improved Long-Period Generators Based on Linear Recurrences Modulo 2'', ACM Transactions on Mathematical Software. But this package is not intended to be used directly, you are strongly __encouraged__ to use the 'randtoolbox' package, which depends on this package.
+About r-rngwell
+---------------
+
+Home: https://CRAN.R-project.org/package=rngWELL
+
+Package license: BSD_3_clause
 
 Summary: It is a dedicated package to WELL pseudo random generators, which were introduced in Panneton et al. (2006), ``Improved Long-Period Generators Based on Linear Recurrences Modulo 2'', ACM Transactions on Mathematical Software. But this package is not intended to be used directly, you are strongly __encouraged__ to use the 'randtoolbox' package, which depends on this package.
 
@@ -27,13 +38,6 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1555&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rngwell-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1555&branchName=main">
@@ -41,10 +45,10 @@ Current build status
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.1</td>
+              <td>linux_64_r_base4.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1555&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rngwell-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rngwell-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
@@ -52,6 +56,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1555&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rngwell-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1555&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rngwell-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
