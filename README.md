@@ -9,7 +9,7 @@ About r-rngwell
 
 Home: https://CRAN.R-project.org/package=rngWELL
 
-Package license: BSD_3_clause
+Package license: BSD-3-Clause
 
 Summary: It is a dedicated package to WELL pseudo random generators, which were introduced in Panneton et al. (2006), ``Improved Long-Period Generators Based on Linear Recurrences Modulo 2'', ACM Transactions on Mathematical Software. But this package is not intended to be used directly, you are strongly __encouraged__ to use the 'randtoolbox' package, which depends on this package.
 
@@ -18,7 +18,7 @@ About r-rngwell
 
 Home: https://CRAN.R-project.org/package=rngWELL
 
-Package license: BSD_3_clause
+Package license: BSD-3-Clause
 
 Summary: It is a dedicated package to WELL pseudo random generators, which were introduced in Panneton et al. (2006), ``Improved Long-Period Generators Based on Linear Recurrences Modulo 2'', ACM Transactions on Mathematical Software. But this package is not intended to be used directly, you are strongly __encouraged__ to use the 'randtoolbox' package, which depends on this package.
 
